@@ -1,0 +1,23 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!--##SCHEMA_TARGET_NAMESPACE##:http://www.rajantechies.com/mtomservice/--><!--##SCHEMA_IMPORTED_NAMESPACE##:-->
+   <xsd:element name="Upload">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="FileType" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AsyncRqUID" type="xsd:string"/>
+            <xsd:element maxOccurs="1"
+                          minOccurs="1"
+                          name="Attachment"
+                          type="xsd:base64Binary"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="UploadResponse">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>
+<!--##SCHEMAEND##-->
+
